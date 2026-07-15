@@ -35,13 +35,15 @@
 
             <p>
                 <label for="email">이메일:</label>
-                <input type="email" id="email" name="email" placeholder="example" required> @
+                <input type="text" id="email" name="email" placeholder="example" required> @
                 <select name="emailDomain">
                     <option value="direct">직접입력</option>
                     <option value="gmail.com">gmail.com</option>
                     <option value="naver.com">naver.com</option>
                     <option value="daum.net">daum.net</option>
                 </select>
+                <!-- 추후 JS에서 입력창 숨길 수 있게 처리할 예정 -->
+                <input type="text" id="emailDomainDirect" name="emailDomainDirect" placeholder="도메인 입력" style="display:none;">
             </p>
 
         </fieldset>
