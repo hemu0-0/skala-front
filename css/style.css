@@ -89,3 +89,12 @@ th {
     background-color: #ffef61;
     font-weight: bold;
 }
+
+.trip-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
