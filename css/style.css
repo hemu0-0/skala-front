@@ -102,7 +102,7 @@ th {
 .trip-video {
     max-width: 600px;
     width: 100%;
-    margin: 10px auto 0;  
+    margin: 10px auto 0;
     padding: 15px;
     border: 1px solid #ccc;
     text-align: center;
@@ -115,4 +115,88 @@ th {
     height: auto;
     border-radius: 5px;
     display: block;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type="radio"],
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+fieldset {
+    border: 1px solid #cbcbcb;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.btn-sub {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.btn-sub:hover {
+    background-color: #45a049;
+}
+
+.btn-reg {
+    background-color: #b6b6b6;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-reg:hover {
+    background-color: #696868;
+}
+
+#introduction {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: none; 
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+
+.lead {
+    font-size: 20px;
+    color: #555;
+    text-align: center;
+    margin-bottom: 20px;
 }
