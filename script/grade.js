@@ -1,3 +1,5 @@
+document.getElementById('grade-btn').addEventListener('click', calGrade)
+
 function calGrade() {
     var subjects = ["HTML", "CSS", "JavaScript"];
     var total = 0;

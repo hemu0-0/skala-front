@@ -1,3 +1,5 @@
+document.getElementById('bag-btn').addEventListener('click', showMyBag)
+
 function showMyBag() {
     var myBag = [{name: '책', count:1}, {name: '안경', count: 1}, {name: '연필', count: 10}];
 

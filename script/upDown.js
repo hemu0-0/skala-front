@@ -1,3 +1,5 @@
+document.getElementById('updown-btn').addEventListener('click', startGame)
+
 function startGame() {
     var computerNum = Math.floor(Math.random() * 50) + 1;
 
