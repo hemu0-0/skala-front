@@ -70,10 +70,20 @@
             <div class="game-zone">
                 <h3> GAME ZONE </h3>
                 <div class="game-content">
-                    <button id="updown-btn" class="updown"> 업다운 게임 </button>    
+                    <button id="updown-btn" class="updown"> 업다운 게임 </button>
                     <button id="grade-btn" class="grade"> 성적 계산기 </button>
                     <button id="bag-btn" class="bag"> 내 가방 보기 </button>
+                    <button id="catch-btn" class="catch">하치와레 잡기 게임</button>
                     <img src="../media/하치풀.png" width="150px">
+                </div>
+            </div>
+
+            <div id="catch-game-overlay" style="display:none;">
+                <div id="catch-game-box">
+                    <p>남은 시간: <span id="catch-timer">10</span>초</p>
+                    <p>점수: <span id="catch-score">0</span></p>
+                    <div id="catch-area"></div>
+                    <button id="catch-close">닫기</button>
                 </div>
             </div>
 
@@ -86,11 +96,12 @@
         <p>© 2026 Harmony's Home Sweet Home. All rights reserved.</p>
     </footer>
 
-<script src="../script/upDown.js"></script>
-<script src="../script/grade.js"></script>
-<script src="../script/bag.js"></script>
-<script type="module" src="../script/realtimeInfo.js"></script>
-<script src="../script/play.js"></script>
+    <script src="../script/upDown.js"></script>
+    <script src="../script/grade.js"></script>
+    <script src="../script/bag.js"></script>
+    <script type="module" src="../script/realtimeInfo.js"></script>
+    <script src="../script/play.js"></script>
+    <script src="../script/catchGame.js"></script>
 </body>
 
 
