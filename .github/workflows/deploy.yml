@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: ["main"]  
-  workflow_dispatch:      # Actions 탭에서 수동 실행도 가능하게
+  workflow_dispatch:      
 
 permissions:
   contents: read
@@ -30,7 +30,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './html'  
+          path: '.'  
 
       - name: Deploy to GitHub Pages
         id: deployment
