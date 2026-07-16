@@ -14,10 +14,12 @@ header {
     padding: 20px;
     text-align: center;
 }
+
 header .title-area {
     flex: 1;
     text-align: center;
 }
+
 header img {
     width: 200px;
     height: auto;
@@ -53,25 +55,24 @@ a:link {
     color: #3498db;
 }
 
-/* 방문 전 */
+
 a:visited {
     color: #8e44ad;
 }
 
-/* 방문 후 */
+
 a:hover {
     color: #e74c3c;
 }
 
-/* 마우스 올렸을 때 */
+
 a:active {
     color: #f39c12;
 }
 
-/* 클릭하는 순간 */
 
 .container {
-    max-width: 800px;
+    max-width: 100%;
     margin: 0 auto;
     padding: 20px;
     background-color: #ffffff;
@@ -100,6 +101,12 @@ th {
     font-weight: bold;
 }
 
+.photo-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
 .trip-card {
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -107,7 +114,7 @@ th {
     margin: 10px auto 0;
     background-color: #f9f9f9;
     text-align: center;
-    max-width: 600px;
+    transition: all 0.3s ease;
 }
 
 .trip-card img {
@@ -122,7 +129,7 @@ th {
 .trip-card:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transform: translateY(-2px);
-    transition: all 0.3s ease;
+
 }
 
 .trip-video {
@@ -295,17 +302,20 @@ nav {
 }
 
 .nav-menu {
-  list-style: none;      /* 기본 마커 제거 */
-  padding: 0;
-  margin: 0;
+    list-style: none;
+    /* 기본 마커 제거 */
+    padding: 0;
+    margin: 0;
 }
 
 .nav-menu li {
-  background-image: url('../media/하치.png');
-  background-repeat: no-repeat;
-  background-position: left center;
-  background-size: 25px 25px;   /* 원하는 크기로 자유롭게 조절 */
-  padding-left: 24px;            /* 이미지 자리만큼 텍스트 밀기 */
+    background-image: url('../media/하치.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 25px 25px;
+    /* 원하는 크기로 자유롭게 조절 */
+    padding-left: 24px;
+    /* 이미지 자리만큼 텍스트 밀기 */
 }
 
 .content-wrapper {
@@ -325,4 +335,38 @@ aside {
 
 .aside-info {
     background-color: #f4f2f2;
+}
+
+
+@media (max-width: 786px) {
+    .content-wrapper {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .photo-card {
+        grid-template-columns: 1fr
+    }
+
+    header img {
+        width: 100px;
+        height: 50px;
+        
+    }
+
+    header {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
 }
