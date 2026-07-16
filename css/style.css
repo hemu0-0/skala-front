@@ -128,7 +128,8 @@ th {
 
 .trip-card:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transform: translateY(-2px);
+    transform: translateY(-6px);
+    cursor: pointer; 
 
 }
 
@@ -382,5 +383,20 @@ aside {
         flex-direction: column;
         text-align: center;
         align-items: center;
+    }
+}
+
+header h1 {
+    animation: fadeIn 1.5s ease-out
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0)
     }
 }
