@@ -495,3 +495,7 @@ header h1 {
     word-break: break-word;
     border: 0;
 }
+
+#weather-box {
+    border: 2px dashed #3498db;
+}
