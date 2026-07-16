@@ -445,3 +445,53 @@ header h1 {
 .game-zone h3 {
     margin-top: 0;
 }
+
+.grade {
+    min-width: 150px;
+    max-width: 300px;
+    width: 80%;
+    background: #21b134;
+    border-radius: 999px;
+    box-shadow: #5af513 0 10px 20px -10px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: "Do Hyeon", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    opacity: 1;
+    outline: 0 solid transparent;
+    padding: 8px 18px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    /* width: fit-content; */
+    word-break: break-word;
+    border: 0;
+}
+
+.bag {
+    min-width: 150px;
+    max-width: 300px;
+    width: 80%;
+    background: #750cae;
+    border-radius: 999px;
+    box-shadow: #c504ec 0 10px 20px -10px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: "Do Hyeon", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    opacity: 1;
+    outline: 0 solid transparent;
+    padding: 8px 18px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    /* width: fit-content; */
+    word-break: break-word;
+    border: 0;
+}
