@@ -500,3 +500,11 @@ header h1 {
     border: 2px dashed #3498db;
     background-color: #e4eef5;
 }
+
+#ytplayer {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
+}
