@@ -9,19 +9,32 @@ const select = document.querySelector("#city-select");
 const weatherBox = document.querySelector("#weather-box");
 
 select.addEventListener("change", function () {
-  updateWeather();
+  updateWeather(select.value);
 });
 
-function updateWeather() {
-  const city = select.value;
+async function updateWeather(city) {
   const coord = cityCoords[city];
-  if (coord) {
+  if (!coord) return;
+  weatherBox.innerHTML = `<p> 실시간 날씨 로딩 중...⏳</p>`;
+
+  try {
+    const url = `https://api.open-meteo.com/v1/forecast?latitude=${coord.lat}&longitude=${coord.lon}&current=temperature_2m,relative_humidity_2m`;
+
+    const response = await fetch(url);
+    const data = await response.json();
+
+    const temp = data.current.temperature_2m;
+    const humidity = data.current.relative_humidity_2m;
+
     weatherBox.innerHTML = `
-      <p>${city}</p>
-      <p>위도: ${coord.lat}</p>
-      <p>경도: ${coord.lon}</p>
+      <p>${city} 실시간 날씨</p>
+      <p>현재 기온: ${temp} °C</p>
+      <p>현재 습도: ${humidity} %</p>
     `;
+  } catch(error) {
+    weatherBox.innerHTML = `알 수 없는 오류 발생 ㅠㅠ`;
+    console.error(error);
   }
 }
 
-updateWeather();
+updateWeather(select.value);
