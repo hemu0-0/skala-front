@@ -129,7 +129,7 @@ th {
 .trip-card:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transform: translateY(-6px);
-    cursor: pointer; 
+    cursor: pointer;
 
 }
 
@@ -320,17 +320,17 @@ nav {
 }
 
 nav ul li a {
-  transition: color 0.3s ease, background-color 0.3s ease;
+    transition: color 0.3s ease, background-color 0.3s ease;
 }
 
 nav ul li a:hover {
-  color: #e74c3c;
-  background-color: #f0f8ff;
+    color: #e74c3c;
+    background-color: #f0f8ff;
 }
 
 .btn-sub,
 .btn-reg {
-  transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease;
 }
 
 .content-wrapper {
@@ -376,7 +376,7 @@ aside {
     header img {
         width: 100px;
         height: 50px;
-        
+
     }
 
     header {
@@ -395,8 +395,36 @@ header h1 {
         opacity: 0;
         transform: translateY(-20px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0)
     }
+}
+
+.updown {
+    min-width: 150px;
+    background: #5E5DF0;
+    border-radius: 999px;
+    box-shadow: #5E5DF0 0 10px 20px -10px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: "Do Hyeon", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    opacity: 1;
+    outline: 0 solid transparent;
+    padding: 8px 18px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: fit-content;
+    word-break: break-word;
+    border: 0;
+}
+
+.game-zone {
+    background-color: white;
 }
