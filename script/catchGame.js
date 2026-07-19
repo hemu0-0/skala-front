@@ -8,7 +8,7 @@ const scoreDisplay = document.querySelector("#catch-score");
 const GAME_TIME = 10;      
 const SPAWN_INTERVAL = 700; 
 const FALL_SPEED = 2;      
-const IMAGE_SRC = "../media/하치.png"; 
+const IMAGE_SRC = "../media/hachi.png";
 
 let score = 0;
 let timeLeft = GAME_TIME;
