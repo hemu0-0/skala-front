@@ -13,6 +13,7 @@
     <div class="container">
         <a href="index.html">🏠​ 홈으로</a>
         <h1>✈️ 나의 여행 앨범</h1>
+        <button id="gallery-btn" class="gallery">🃏 갤러리로 보기</button>
         <audio controls>
             <source src="../media/music.mp3" type="audio/mpeg">
         </audio>
@@ -23,6 +24,9 @@
             <p class="trip-card"><img src="../media/nagoya.jpeg" alt="나고야 여행 사진"> <br>나고야 나고야성 (2024년)</p>
             <p class="trip-card"><img src="../media/qingdao.jpeg" alt="칭다오 여행 사진"> <br>칭다오 (2025년)</p>
             <p class="trip-card"><img src="../media/thailand.jpg" alt="태국 여행 사진"> <br>방콕 왓아룬 (2026년)</p>
+            <p class="trip-card"><img src="../media/boryeong.jpeg" alt="보령 여행 사진"> <br>보령 녹차밭</p>
+            <p class="trip-card"><img src="../media/xian.jpeg" alt="시안 여행 사진"> <br>시안 종루(鐘樓)</p>
+            <p class="trip-card"><img src="../media/jeju.jpeg" alt="제주도 여행 사진"> <br>제주도 노을</p>
         </div>
         <br>
         <hr>
@@ -39,6 +43,23 @@
 
     </div>
 
+    <div id="trip-gallery-overlay" style="display:none;">
+        <div id="trip-gallery-box">
+            <h3>🔮 여행 카드 뽑기</h3>
+            <div id="gallery-card" class="tarot-card">
+                <img id="gallery-img" src="" alt="">
+            </div>
+            <p id="gallery-caption"></p>
+            <p id="gallery-count"></p>
+            <div id="gallery-controls">
+                <button id="gallery-prev">◀ 이전 카드</button>
+                <button id="gallery-next">다음 카드 ▶</button>
+            </div>
+            <button id="gallery-close">닫기</button>
+        </div>
+    </div>
+
+    <script src="../script/tripGallery.js"></script>
 </body>
 
 </html>
